@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Create a .env file inside the src/ build context from the ENV secret.
+      # Create a .env file inside the src/ build context from the ENV secret. Pushing the changes.
       # We write the secret directly to a file in the runner workspace so it is included in the image build,
       # but we do NOT commit it to the repo. GitHub automatically masks secrets in logs.
       - name: Create .env file from ENV secret
